@@ -1,12 +1,12 @@
 # Project: Building a Production-Grade Customer Support AI Agent with Amazon Bedrock AgentCore
 
-**Udacity — AWS AI Engineering Nanodegree — Course 2**
+**Udacity — AWS AI Engineering Nanodegree **
 
 ---
 
 ## Overview
 
-In this project you will build a fully functional, production-ready AI customer support agent for a fictional Amazon store. Starting from a simple local chatbot, you will progressively add cloud infrastructure, external tool integration, a knowledge base, persistent memory, a code interpreter, and a browser — finishing with a deployable agent that can handle real customer inquiries end-to-end.
+In this project you will build a fully functional, production-ready AI customer support agent for a fictional Amazon store. Starting from a simple local chatbot, you will progressively add cloud infrastructure, external tool integration, a knowledge base, persistent memory, a code interpreter, and a browser finishing with a deployable agent that can handle real customer inquiries end-to-end.
 
 By the end of the project your agent will be able to:
 
