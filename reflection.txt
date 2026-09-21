@@ -1,0 +1,23 @@
+Reflection
+
+One decision I made in this project was to limit how many loyalty points a customer could use. 
+I set the limit to 50% of the order value and made sure the points were rounded down to the nearest 500 points. 
+I chose this because it is similar to how real loyalty programmes work, and it also makes the 
+calculations easier for the system to handle.
+
+The biggest challenge I faced was with permissions. At first, my knowledge base and browser tools
+ were not working properly. Instead of giving me an obvious error, the agent would sometimes give 
+ the customer a generic message or even provide information that sounded correct but was actually wrong. 
+ This made the problem harder to find.
+
+I eventually checked the CloudWatch logs and found that the AgentCore Runtime did not have the correct 
+permissions to access my Knowledge Base and Browser tool. I fixed this by adding the required permissions 
+to the execution role and limiting them to the specific resources I needed.
+
+This taught me an important lesson about IAM permissions. Having the wrong permissions does not always mean 
+that the system will completely stop working. Sometimes, the agent can continue running but give unreliable 
+answers when one of its tools fails. For a customer support agent, that can be a serious problem.
+
+If I were taking this project further, I would add tests to make sure each tool is actually returning 
+the correct data, rather than only checking that no error occurred. I would also add CloudWatch alarms
+ for permission errors so that problems can be found before they affect real users.

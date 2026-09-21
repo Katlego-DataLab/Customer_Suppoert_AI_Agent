@@ -1,0 +1,1 @@
+npx @modelcontextprotocol/inspector --cli https://customersupportgateway-4imuuwmspl.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp --method tools/list --transport http

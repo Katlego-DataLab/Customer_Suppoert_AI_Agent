@@ -1,0 +1,1 @@
+aws logs tail /aws/bedrock-agentcore/runtimes/customer_support_agent-65qKpP72BW-DEFAULT --log-stream-name-prefix "2026/09/19/[runtime-logs" --since 10m
